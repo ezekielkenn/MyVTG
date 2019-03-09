@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".RegisterActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:tint="@color/m_green"
+        android:src="@drawable/baseline_done_black_24"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_goback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:tint="@color/m_red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_black_36" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/uploadpic"
+                tools:srcCompat="@drawable/uploadpic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/firstnamelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:textColorHint="@android:color/black"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@color/m_red">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/txt_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:fontFamily="sans-serif"
+                        android:hint="Firstname"
+                        android:inputType="text|textPostalAddress"
+                        android:textColorHint="@android:color/black"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lastnamelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:textColorHint="@android:color/black"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@color/m_red">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/txt_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:fontFamily="sans-serif"
+                        android:hint="Lastname"
+                        android:inputType="text|textPostalAddress"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="14sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/milayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:textColorHint="@android:color/black"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@color/m_red">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/txt_mi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:hint="MI"
+                        android:inputType="text|textPostalAddress"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="14sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="372dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:padding="20dp">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@android:color/black"
+                        app:errorEnabled="true"
+                        app:errorTextAppearance="@color/m_red">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/txt_regemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/addr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/black"
+                        app:errorEnabled="true"
+                        app:errorTextAppearance="@color/m_red">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/txt_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="Address"
+                            android:inputType="text|textPostalAddress"
+
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/regpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/black"
+                        app:errorEnabled="true"
+                        app:errorTextAppearance="@color/m_red">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/txt_regpass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="Password"
+                            android:inputType="text|textPassword"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/confirmpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/black"
+                        app:errorEnabled="true"
+                        app:errorTextAppearance="@color/m_red">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/txt_confirmpass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="Confirm Password"
+                            android:inputType="text|textPassword"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/black"
+                        app:errorEnabled="true"
+                        app:errorTextAppearance="@color/m_red">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/txt_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="Phone"
+                            android:inputType="text|number"
+                            android:maxLength="15"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColorHint="@android:color/black"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Gender"
+                        android:textColorHint="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/female" />
+
+                        <ImageView
+                            android:id="@+id/imgM"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/male" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#232F34</color>
+    <color name="colorPrimaryDark">#344955</color>
+    <color name="colorAccent">#3498db</color>
+    <color name="Dark">#000000</color>
+    
+    <!--SELECTED TEXT/PAGE COLOR-->
+    <color name="selected">#F9AA33</color>
+    <color name="normal">#B4C1CC</color>
+
+    
+    <!--MATERIAL FLAT COLORS-->
+    <color name="m_blue">#3498db</color>
+    <color name="md_blue">#2980b9</color>
+    <color name="m_red">#e74c3c</color>
+    <color name="md_red">#c0392b</color>
+    <color name="m_white">#ecf0f1</color>
+    <color name="md_white">#bdc3c7</color>
+    <color name="m_orange">#e67e22</color>
+    <color name="md_orange">#d35400</color>
+    <color name="m_green">#2ecc71</color>
+    <color name="md_green">#27ae60</color>
+    <color name="m_turq">#1abc9c</color>
+    <color name="md_turq">#16a085</color>
+    <color name="m_nblue">#34495e</color>
+    <color name="md_nblue">#2c3e50</color>
+</resources>
